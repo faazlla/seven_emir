@@ -1,0 +1,91 @@
+{% extends "auto-base.html" %}
+{% load static %}
+
+{%block content%}
+
+
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header" style="margin-top:50px;">
+        <h1 class="display-3 text-uppercase text-white mb-3">Kontakt</h1>
+        <div class="d-inline-flex text-white">
+            <h6 class="text-uppercase m-0"><a class="text-white" href=" seven.html ">Home</a></h6>
+            <h6 class="text-body m-0 px-3">/</h6>
+            <h6 class="text-uppercase text-body m-0">Kontakt</h6>
+        </div>
+    </div>
+    <!-- Page Header Start -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-4 text-uppercase text-center mb-5">Kontaktiraj nas</h1>
+            <div class="row">
+                <div class="col-lg-7 mb-2">
+                    <div class="contact-form bg-light mb-4" style="padding: 30px;">
+                        <form action="{% url 'contact'%}" method="post">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control p-4" name="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="email" class="form-control p-4" name="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control p-4" name="number" placeholder="Number" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control py-3 px-4" rows="6" name="message" placeholder="Message" required></textarea>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary py-3 px-5" type="submit">Posalji Poruku</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-2">
+                    <div class="bg-secondary d-flex flex-column justify-content-center px-5 mb-4" style="height: 435px;">
+                        
+                        <div class="d-flex mb-3">
+                            <a href="https://www.google.com/maps/dir//C4VW%2BF27+No%C4%87ni+klub+Se7en,+Sarajevska+b.b,+Zavidovi%C4%87i+72220/@44.4425366,18.1412105,17.75z/data=!4m8!4m7!1m0!1m5!1m1!1s0x475eeb22eeb1efed:0x43cb128e5f1a8962!2m2!1d18.1414301!2d44.4432517?entry=ttu" target="blank"><i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i></a>
+                            <div class="mt-n1">
+                                <h5 class="text-light">SEVEN</h5>
+                                <p>Sarajevska b.b, Zavidovici, BiH</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i href="tel:+38761638679" class="fa fa-2x fa-phone text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Broj Telefona</h5>
+                                <p class="m-0">+38761638679</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i href=" mailto:efazla96@gmail.com " class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Auto Seven</h5>
+                                <p>autoseven@example.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i href=" mailto:efazla96@gmail.com " class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Night Club Seven</h5>
+                                <p class="m-0">seven@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+
+
+    {% endblock %}

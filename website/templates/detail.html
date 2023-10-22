@@ -1,0 +1,109 @@
+{% extends "auto-base.html" %}
+{% load static %}
+
+{%block content%}
+
+
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header" style="margin-top:50px;">
+        <h1 class="display-3 text-uppercase text-white mb-3">Rent ponuda</h1>
+        <div class="d-inline-flex text-white">
+            <h6 class="text-uppercase m-0"><a class="text-white" href=" seven.html ">Home</a></h6>
+            <h6 class="text-body m-0 px-3">/</h6>
+            <h6 class="text-uppercase text-body m-0">Rent Ponuda</h6>
+        </div>
+    </div>
+    <!-- Page Header Start -->
+
+
+    <!-- Related Car Start -->
+    <div class="container-fluid pb-5">
+        <div class="container pb-5">
+            <h1 class="display-4 text-uppercase text-center mb-5">Rent Ponuda</h1>
+            <div class="owl-carousel related-carousel position-relative" style="padding: 0 30px;">
+                <div class="rent-item">
+                    <img class="img-fluid mb-4" src=" {% static 'img/a7.png' %} " alt="">
+                    <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="px-2">
+                            <i class="fa fa-car text-primary mr-1"></i>
+                            <span>2020</span>
+                        </div>
+                        <div class="px-2 border-left border-right">
+                            <i class="fa fa-cogs text-primary mr-1"></i>
+                            <span>AUTO</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa fa-road text-primary mr-1"></i>
+                            <span>98K</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary px-3" href="contact.html  ">BAM 99.00/Dan</a>
+                </div>
+                <div class="rent-item">
+                    <img class="img-fluid mb-4" src=" {% static 'img/a8.png' %} " alt="">
+                    <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="px-2">
+                            <i class="fa fa-car text-primary mr-1"></i>
+                            <span>2015</span>
+                        </div>
+                        <div class="px-2 border-left border-right">
+                            <i class="fa fa-cogs text-primary mr-1"></i>
+                            <span>AUTO</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa fa-road text-primary mr-1"></i>
+                            <span>112K</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary px-3" href=" contact.html ">BAM 85.00/Dan</a>
+                </div>
+                <div class="rent-item">
+                    <img class="img-fluid mb-4" src=" {% static 'img/a1.png' %} " alt="">
+                    <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="px-2">
+                            <i class="fa fa-car text-primary mr-1"></i>
+                            <span>2009</span>
+                        </div>
+                        <div class="px-2 border-left border-right">
+                            <i class="fa fa-cogs text-primary mr-1"></i>
+                            <span>AUTO</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa fa-road text-primary mr-1"></i>
+                            <span>160K</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary px-3" href=" contact.html ">BAM 55.00/Dan</a>
+                </div>
+                <div class="rent-item">
+                    <img class="img-fluid mb-4" src=" {% static 'img/a9.png' %} " alt="">
+                    <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+                    <div class="d-flex justify-content-center mb-4">
+                        <div class="px-2">
+                            <i class="fa fa-car text-primary mr-1"></i>
+                            <span>2006</span>
+                        </div>
+                        <div class="px-2 border-left border-right">
+                            <i class="fa fa-cogs text-primary mr-1"></i>
+                            <span>AUTO</span>
+                        </div>
+                        <div class="px-2">
+                            <i class="fa fa-road text-primary mr-1"></i>
+                            <span>250K</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary px-3" href="contact.html ">BAM 65.00/Dan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Related Car End -->
+
+
+
+    {% endblock %}

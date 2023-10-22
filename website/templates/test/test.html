@@ -1,0 +1,347 @@
+{% extends "auto-base.html" %}
+{% load static %}
+
+{%block content%}
+
+
+       <!-- Team Start -->
+       <div class="container-fluid py-5">
+        <div class="container py-5">
+            <h1 class="display-1 text-primary text-center">04</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Meet Our Team</h1>
+            <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
+                <div class="team-item">
+                    <img class="img-fluid w-100" src=" {% static 'img/team-1.jpg' %} " alt="">
+                    <div class="position-relative py-4">
+                        <h4 class="text-uppercase">Full Name</h4>
+                        <p class="m-0">Designation</p>
+                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <img class="img-fluid w-100" src=" {% static 'img/team-2.jpg' %} " alt="">
+                    <div class="position-relative py-4">
+                        <h4 class="text-uppercase">Full Name</h4>
+                        <p class="m-0">Designation</p>
+                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <img class="img-fluid w-100" src=" {% static 'img/team-3.jpg' %} " alt="">
+                    <div class="position-relative py-4">
+                        <h4 class="text-uppercase">Full Name</h4>
+                        <p class="m-0">Designation</p>
+                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <img class="img-fluid w-100" src=" {% static 'img/team-4.jpg' %} " alt="">
+                    <div class="position-relative py-4">
+                        <h4 class="text-uppercase">Full Name</h4>
+                        <p class="m-0">Designation</p>
+                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Search Start -->
+    <div class="container-fluid bg-white pt-3 px-lg-5">
+        <div class="row mx-n2">
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Pickup Location</option>
+                    <option value="1">Location 1</option>
+                    <option value="2">Location 2</option>
+                    <option value="3">Location 3</option>
+                </select>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Drop Location</option>
+                    <option value="1">Location 1</option>
+                    <option value="2">Location 2</option>
+                    <option value="3">Location 3</option>
+                </select>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <div class="date mb-3" id="date" data-target-input="nearest">
+                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Date"
+                        data-target="#date" data-toggle="datetimepicker" />
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <div class="time mb-3" id="time" data-target-input="nearest">
+                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Time"
+                        data-target="#time" data-toggle="datetimepicker" />
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Select A Car</option>
+                    <option value="1">Car 1</option>
+                    <option value="2">Car 1</option>
+                    <option value="3">Car 1</option>
+                </select>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <button class="btn btn-primary btn-block mb-3" type="submit" style="height: 50px;">Search</button>
+            </div>
+        </div>
+    </div>
+    <!-- Search End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header" style="margin-top:50px;">
+        <h1 class="display-3 text-uppercase text-white mb-3">Testimonial</h1>
+        <div class="d-inline-flex text-white">
+            <h6 class="text-uppercase m-0"><a class="text-white" href=" {% static '' %} ">Home</a></h6>
+            <h6 class="text-body m-0 px-3">/</h6>
+            <h6 class="text-uppercase text-body m-0">Testimonial</h6>
+        </div>
+    </div>
+    <!-- Page Header Start -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <h1 class="display-4 text-uppercase text-center mb-5">Our Client's Say</h1>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src=" {% static 'img/testimonial-1.jpg' %} " alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Client Name</h4>
+                    <i class="mb-2">Profession</i>
+                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src=" {% static 'img/testimonial-2.jpg' %} " alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Client Name</h4>
+                    <i class="mb-2">Profession</i>
+                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src=" {% static 'img/testimonial-3.jpg' %} " alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Client Name</h4>
+                    <i class="mb-2">Profession</i>
+                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src=" {% static 'img/testimonial-4.jpg' %} " alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Client Name</h4>
+                    <i class="mb-2">Profession</i>
+                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+<!-- Detail Start -->
+<div class="container-fluid pt-5">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-lg-8 mb-5">
+                <h1 class="display-4 text-uppercase mb-5">Mercedes Benz R3</h1>
+                <div class="row mx-n2 mb-3">
+                    <div class="col-md-3 col-6 px-2 pb-2">
+                        <img class="img-fluid w-100" src=" {% static 'img/gallery-1.jpg' %} " alt="">
+                    </div>
+                    <div class="col-md-3 col-6 px-2 pb-2">
+                        <img class="img-fluid w-100" src=" {% static 'img/gallery-2.jpg' %} " alt="">
+                    </div>
+                    <div class="col-md-3 col-6 px-2 pb-2">
+                        <img class="img-fluid w-100" src=" {% static 'img/gallery-3.jpg' %} " alt="">
+                    </div>
+                    <div class="col-md-3 col-6 px-2 pb-2">
+                        <img class="img-fluid w-100" src=" {% static 'img/gallery-4.jpg' %} " alt="">
+                    </div>
+                </div>
+                <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna</p>
+                <div class="row pt-2">
+                    <div class="col-md-3 col-6 mb-2">
+                        <i class="fa fa-car text-primary mr-2"></i>
+                        <span>Model: 2015</span>
+                    </div>
+                    <div class="col-md-3 col-6 mb-2">
+                        <i class="fa fa-cogs text-primary mr-2"></i>
+                        <span>Automatic</span>
+                    </div>
+                    <div class="col-md-3 col-6 mb-2">
+                        <i class="fa fa-road text-primary mr-2"></i>
+                        <span>20km/liter</span>
+                    </div>
+                    <div class="col-md-3 col-6 mb-2">
+                        <i class="fa fa-eye text-primary mr-2"></i>
+                        <span>GPS Navigation</span>
+                    </div>
+                    <div class="col-md-3 col-6 mb-2">
+                        <i class="fa fa-car text-primary mr-2"></i>
+                        <span>Model: 2015</span>
+                    </div>
+                    <div class="col-md-3 col-6 mb-2">
+                        <i class="fa fa-cogs text-primary mr-2"></i>
+                        <span>Automatic</span>
+                    </div>
+                    <div class="col-md-3 col-6 mb-2">
+                        <i class="fa fa-road text-primary mr-2"></i>
+                        <span>20km/liter</span>
+                    </div>
+                    <div class="col-md-3 col-6 mb-2">
+                        <i class="fa fa-eye text-primary mr-2"></i>
+                        <span>GPS Navigation</span>
+                    </div>
+                    <div class="col-md-3 col-6 mb-2">
+                        <i class="fa fa-car text-primary mr-2"></i>
+                        <span>Model: 2015</span>
+                    </div>
+                    <div class="col-md-3 col-6 mb-2">
+                        <i class="fa fa-cogs text-primary mr-2"></i>
+                        <span>Automatic</span>
+                    </div>
+                    <div class="col-md-3 col-6 mb-2">
+                        <i class="fa fa-road text-primary mr-2"></i>
+                        <span>20km/liter</span>
+                    </div>
+                    <div class="col-md-3 col-6 mb-2">
+                        <i class="fa fa-eye text-primary mr-2"></i>
+                        <span>GPS Navigation</span>
+                    </div>
+                </div>
+           </div>
+
+            <div class="col-lg-4 mb-5">
+                <div class="bg-secondary p-5">
+                    <h3 class="text-primary text-center mb-4">Check Availability</h3>
+                    <div class="form-group">
+                        <select class="custom-select px-4" style="height: 50px;">
+                            <option selected>Pickup Location</option>
+                            <option value="1">Location 1</option>
+                            <option value="2">Location 2</option>
+                            <option value="3">Location 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="custom-select px-4" style="height: 50px;">
+                            <option selected>Drop Location</option>
+                            <option value="1">Location 1</option>
+                            <option value="2">Location 2</option>
+                            <option value="3">Location 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <div class="date" id="date1" data-target-input="nearest">
+                            <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Date"
+                                data-target="#date1" data-toggle="datetimepicker" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="time" id="time1" data-target-input="nearest">
+                            <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Time"
+                                data-target="#time1" data-toggle="datetimepicker" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select class="custom-select px-4" style="height: 50px;">
+                            <option selected>Select Person</option>
+                            <option value="1">Person 1</option>
+                            <option value="2">Person 2</option>
+                            <option value="3">Person 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-0">
+                        <button class="btn btn-primary btn-block" type="submit" style="height: 50px;">Check Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Detail End -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      
+    <video autoplay muted loop id="bg-video">
+      <source src=" {% static 'assets/images/sevenvideo.mp4' %} " type="video/mp4" />
+    </video>
+
+    <div class="video-overlay header-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12" style="margin-top:50%;">
+                  <div class="count-area-content text">
+                    <div class="count-title"style="color:#f5a425; font-size:25px;"><strong>Play Now </strong></div>
+                    <div class="count-title">See what you're missing.</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="count-area-content text">
+                    <div class="count-title" style="color:#f5a425; font-size:25px;"><strong>365 Day/Year</strong></div>
+                    <div class="count-title">Every night is a party night.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 align-self-center">
+              <div class="video-container" style="margin-top:50%; max-width:100%; width: 100%; height: auto;  object-fit: cover;">
+                <video controls style="width: 100%; height: auto; max-height: 400px; border-radius:40px;">
+                    <source src="{% static 'assets/images/sevenvideo.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Main Banner Area End ***** -->
+
+
+
+
+<li class="has-sub">
+    <a href=" {% static 'javascript:void(0)' %} ">Pages</a>
+    <ul class="sub-menu">
+          <li><a href=" meetings.html ">Upcoming Events</a></li>
+          <li><a href="meeting-details.html ">Event Detail</a></li>
+          <li class="scroll-to-section"><a href=" #galery">Galery</a></li>
+          <li class="scroll-to-section"><a href=" #partys" >Party</a></li>
+    </ul>
+</li> 
+
+    {% endblock %}

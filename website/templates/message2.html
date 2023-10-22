@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{%block content%}
+
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      
+    <video autoplay muted loop id="bg-video">
+      <source src=" {% static 'assets/images/seven_bgvideo.mp4' %} " type="video/mp4" />
+    </video>
+
+    <div class="video-overlay header-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="caption">
+            <h6>{{ name }}</h6>
+            <h2>YOU HAVE SUCCESSFULLY SENT THE MESSAGE</h2>
+            <p>Our team will contact you as soon as possible, please be patient</p>
+            <div class="main-button-red">
+                <div class="scroll-to-section"><a href=" index.html ">Back</a></div>
+            </div>
+        </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Main Banner Area End ***** -->
+
+
+        
+
+{% endblock %}
